@@ -27,15 +27,15 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Number_of_announcements = st.sidebar.text_input('Number_of_announcements', 0)
-        Number_of_withdrawals = st.sidebar.text_input('Number_of_withdrawals',0)
-        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes', 0)
-        Number_of_withdrawn_NLRI_prefixes = st.sidebar.text_input('Number_of_withdrawn_NLRI_prefixes', 0)
-        Average_AS_path_length = st.sidebar.text_input('Average_AS_path_length', 0)
-        Average_unique_AS_path_length = st.sidebar.text_input('Average_unique_AS_path_length', 0)
-        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance', 0)
-        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length', 0)
-        Number_of_incomplete_packets = st.sidebar.text_input('Number_of_incomplete_packets', 0)
+        Number_of_announcements = st.sidebar.text_input('Number_of_announcements >>> Input an integer value. Eg: "58","45"', 0)
+        Number_of_withdrawals = st.sidebar.text_input('Number_of_withdrawals >>> Input an integer value. Eg: "4","5"',0)
+        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes >>> Input an integer value. Eg: "130","80"', 0)
+        Number_of_withdrawn_NLRI_prefixes = st.sidebar.text_input('Number_of_withdrawn_NLRI_prefixes >>> Input an integer value. Eg: "29","23"', 0)
+        Average_AS_path_length = st.sidebar.text_input('Average_AS_path_length >>> Input an integer value. Eg: "6","6"', 0)
+        Average_unique_AS_path_length = st.sidebar.text_input('Average_unique_AS_path_length >>> Input an integer value. Eg: "6","6"', 0)
+        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance >>> Input an integer value. Eg: "1","0.8"', 0)
+        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length >>> Input an integer value. Eg: "13","9"', 0)
+        Number_of_incomplete_packets = st.sidebar.text_input('Number_of_incomplete_packets >>> Input an integer value. Eg: "20","8"', 0)
         data = {'Number_of_announcements': Number_of_announcements,
                 'Number_of_withdrawals': Number_of_withdrawals,
                 'Number_of_announced_NLRI_prefixes': Number_of_announced_NLRI_prefixes,
